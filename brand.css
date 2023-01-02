@@ -1,0 +1,1511 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: fit-content;
+   
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
+}
+#bag{
+    display:block;
+}
+header .fa-bars{
+    font-size: 1.4em;
+    color: white;
+    display: none;
+}
+.timing{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+background-color: white;
+
+
+
+
+}
+.time{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 3%;
+    position: sticky;
+    top: 0;
+    font-family: 'Paytone One', sans-serif;
+}
+.call{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 3%;
+    font-family: 'Paytone One', sans-serif;
+}
+header .logo img{
+    margin-left: 40%;
+    border-radius: 20PX;
+}
+header .nav ol{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    align-items: center;
+   
+    
+
+}
+header .nav ol li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 0;
+    margin-right: 50px;
+    overflow: hidden;
+    background-color: ;
+    padding: 5px;
+    font-family: 'Paytone One', sans-serif;
+
+    
+}
+header .nav ol li a::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    transform: skew(-20deg);
+    display: none;
+    z-index: -1;
+    
+  
+}
+header .nav ol li a:hover::before{
+    display: block;
+    animation: nav 1s  infinite ;
+}
+
+@keyframes nav {
+    from{
+        width: 0px;
+        background-color: white;
+    }
+    to{
+        width: 100%;
+        background-color: rgba(255, 0, 0, 0.71);
+    }
+}
+.banner{
+    background-image: url(./MLC-DRIVE-STEER-GROUP.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    font-family: 'Paytone One', sans-serif;
+}
+.banner h4{
+    font-size: 1.4em;
+    color: black;
+    padding-top: 0%;
+    margin-left: 45px;
+}
+.banner h2{
+    color: black;
+    font-size: 4em;
+    margin-left: 30px;
+    padding-top: 10px;
+    line-height: 1;
+
+}
+.banner button::before{
+    content: " ";
+    width: 3px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skew(-20deg);
+    display: none;
+    z-index: -1;
+    
+}
+.banner button:hover::before{
+    display: block;
+    animation: ani 0.8s  infinite ;
+}
+@keyframes ani {
+    from{
+        width: 00%;
+        background-color: black;
+        
+    }
+    to{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.523);
+       
+    }
+}
+.banner button{
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 330px;
+    margin-left: 30px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.category{
+    display: flex;
+    justify-content: ;
+}
+.category .sec-1-category h4{
+    font-size: 1.4em;
+    margin-left: 14%;
+    padding-top: 5%
+    
+}
+.category .sec-1-category p{
+    width: 54%;
+    margin-left: 14%;
+    margin-top: 20px;
+}
+.sec-1-category .cate-card{
+    display: flex;
+    gap: 10px;
+    margin-top: 2%;
+    margin-left: 14%;
+
+    
+}
+.sec-1-category .cate-card img{
+    margin-left: 17%;
+}
+.sec-1-category .cate-card h4{
+ margin-left: 38%;
+    margin-top: -15%;
+}
+.sec-1-category .cate-card .c-1{
+    width: 150px;
+    height: fit-content;
+    background-color:rgba(128, 128, 128, 0.277);
+}
+.sec-1-category .cate-card .c-2{
+    width: 150px;
+    height: fit-content;
+    background-color: rgba(128, 128, 128, 0.277);
+}
+.sec-1-category .cate-card .c-3{
+    width: 150px;
+    height:fit-content;
+    background-color: rgba(128, 128, 128, 0.277);
+}
+.sec-1-category .cate-card .c-4{
+    width: 150px;
+    height: fit-content;
+    background-color: rgba(128, 128, 128, 0.277);
+}
+.sec-1-category .cate-card .c-5{
+    width: 150px;
+    height: fit-content;
+    background-color: rgba(128, 128, 128, 0.277);
+}
+.sec-1-category .cate-card .c-6{
+    width: 150px;
+    height: fit-content;
+    background-color: rgba(128, 128, 128, 0.277);
+}
+.sec-1-category .cate-card .c-1:hover,.sec-1-category .cate-card .c-2:hover,.sec-1-category .cate-card .c-3:hover,.sec-1-category .cate-card .c-4:hover,.sec-1-category .cate-card .c-5:hover,.sec-1-category .cate-card .c-6:hover{
+    background-color: red;
+}
+.deals{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+   /*  background-image: url(./istockphoto-512985546-2048x2048-transformed.jpeg);
+    background-size: cover;
+    background-position: center; */
+   /*  width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: 1; */
+    
+}
+.deals button{
+    width: 15% !important;
+    height: 46px !important;
+background-color: black;
+color: WHITE !important;
+    
+   
+    text-align: center;
+}
+.deals button:hover{
+    background-color: red;
+    color: white;
+
+}
+.deals::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position:absolute;
+    top: 0;
+    opacity: .5;
+    z-index: -1;
+}
+.deals button{
+    width: 15%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color:;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    
+   
+}
+.deals-card{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.d-card-1{
+    width: 240PX;
+    height: fit-content;
+    padding: 8px;
+    margin-left: 0px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.d-card-1 button::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position:absolute;
+    top: 0%;
+    left: 0;
+    transform: skew(-20deg);
+    display: none;
+    z-index: -1;
+}
+.d-card-1 button:hover::before{
+    display: block;
+    animation: btn 1s infinite ;
+}
+@keyframes btn {
+    from{
+        width: 0px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+
+    }   
+    to{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.381);
+        color: black;
+    } 
+}
+.d-card-1 button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 0.9em;
+    margin-left: 12px;
+    margin-top: -10px;
+    position:relative;
+    overflow: hidden;
+    z-index: 1;
+   
+}
+.d-card-1 #det-btn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color:black;
+    color: white;
+    font-size: 0.9em;
+}
+.d-card-1 h4{
+    color: ;
+    font-size: 1.4em;
+}
+.d-card-1 p{
+    padding-top: 10px;
+}
+.d-card-1 .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: px;
+}
+.d-card-1 .price p{
+    margin-top: -20px;
+    font-size: 1.4em;
+}
+.d-card-1 .price img{
+    margin-right: 20px;
+    margin-top: -8px;
+}
+.lead{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+  background-image: url(./Group\ 1.png);
+  background-size: cover;
+  background-position: center;
+    overflow: hidden;
+    justify-content: space-around;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Paytone One', sans-serif;
+}
+.lead .l-tyre{
+    margin-right: 100px;
+    text-align: center;
+  
+}
+.lead .l-tyre button{
+    width: 300px;
+    height: 60px;
+    background-color: rgba(255, 0, 0, 0.91);
+    color: white;
+    font-size: 1em;
+    border:none;
+    cursor: pointer;
+   
+}
+.lead img{
+   margin-left: -40px;
+
+}
+@keyframes lead {
+    0%{
+        
+        background-image: url(./t-1\ 1.png);
+    }
+    25%{
+        transform: translateY(0px);
+        background-color: green;
+    }
+    50%{
+        transform: translateY(400px);
+        background-color: blue;
+    }
+    75%{
+        transform: translateY(800px);
+        background-image: url(./t-1\ 1.png);
+    }
+    100%{
+        transform: translateY(1200px);
+    }
+}
+.lead .l-tyre h4{
+    font-size: 1.6em;
+    color: white;
+   ;
+}
+.lead .l-tyre h2{
+    font-size: 3em;
+    padding-top: 20px;
+    color: white;
+}
+.b-call{
+    display: flex;
+ align-items: center;
+ background-color: rgba(255, 0, 0, 0.91);
+ height: 50px;
+ width: 300px;
+ justify-content: center;
+ gap:20px;
+ color: white;
+ margin: auto;
+margin-top: 40px;
+position: relative;
+overflow: hidden;
+z-index: 1;
+
+}
+.b-call::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    transform: skew(-20deg);
+    display: none;
+    z-index: -1;
+}
+.b-call:hover::before{
+    display: block;
+    animation: num 1s  infinite ;
+}
+@keyframes num {
+    from{
+        width: 0;
+        background-color: black;
+    }
+    to{
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.267);
+    }
+}
+.fa-phone-volume{
+    font-size: 2em;
+    margin-left: 0px;
+    color: white;
+}
+.types{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    
+    
+   
+}
+.types .bikes{
+    width: 20%;
+    height: 260px;
+    background-image: url(./harley-davidson-yhW0qm86dOo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    z-index: +1;
+    color: white;
+    overflow: hidden;
+    padding: 5px;
+}
+.types .bikes h4{
+    font-size: 1.4em;
+    font-family: 'Paytone One', sans-serif;
+}
+.types .bikes h2{
+    font-size: 2.4em;
+    font-family: 'Paytone One', sans-serif;
+}
+.types .bikes p{
+    padding-top: 10px;
+    
+}
+.bikes::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.bikes::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+.bikes:hover::after{
+    display: block;
+    animation: bike 2s  forwards;
+}
+@keyframes bike {
+    from{
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.591);
+    }
+    to{
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.335);
+    }
+}
+.types .cars{
+    width: 20%;
+    height: 260px;
+    background-image: url(./cris-ovalle-gOm-Ho8GKYo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    z-index: +1;
+    color: white;
+    overflow: hidden;
+    padding: 5px;
+}
+.types .cars h4{
+    font-size: 1.4em;
+    font-family: 'Paytone One', sans-serif;
+}
+.types .cars h2{
+    font-size: 2.4em;
+    font-family: 'Paytone One', sans-serif;
+}
+.types .cars p{
+    padding-top: 10px;
+}
+.cars::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+.cars::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+.cars:hover::after{
+    display: block;
+    animation: car 2s  forwards;
+}
+@keyframes car {
+    from{
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.591);
+    }
+    to{
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.335);
+    }
+}
+.types .trucks{
+    width: 20%;
+    height: 260px;
+    background-image: url(https://images.news18.com/ibnlive/uploads/2022/09/tata-truck-1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    z-index: +1;
+    color: white;
+    overflow: hidden;
+    padding: 5px;
+}
+.types .trucks h4{
+    font-size: 1.4em;
+    font-family: 'Paytone One', sans-serif;
+}
+.types .trucks h2{
+    font-size: 2.4em;
+    font-family: 'Paytone One', sans-serif;
+}
+.types .trucks p{
+    padding-top: 10px;
+}
+.trucks::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+.trucks::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+.trucks:hover::after{
+    display: block;
+    animation: truck 2s  forwards;
+}
+.cart-page{
+    width: 500px;
+    height: fit-content;
+   background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 3;
+    display: block;
+    animation: cart 2s forwards;
+   overflow: hidden;
+    transition: all;
+    transition-duration: 3s;
+    transform: translateX(600px);
+
+}
+/* @keyframes cart{
+    from{
+        transform:translateX(400px)
+    }
+    to{
+        transform: translateX(0px);
+    }
+}  */
+.fa-rectangle-xmark{
+    color:black;
+    font-size: 2em;
+   float: right;
+   display: none;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+.fa-rectangle-xmark:hover{
+    color: red;
+}
+/* .items{
+    width: 100%;
+    height:100%;
+  
+} */
+.fa-cart-shopping{
+    margin-right: 20px;
+}
+#cart-value{
+    background-color: red;
+    color: white;
+    padding:1PX;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 20px;
+  position: absolute;
+  top: 10PX;
+  right: 0px;
+  z-index: +2;
+}
+@keyframes truck {
+    from{
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.591);
+    }
+    to{
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.335);
+    }
+}
+.types .btruks{
+    width: 20%;
+    height: 260px;
+    background-image: url(https://d1hv7ee95zft1i.cloudfront.net/custom/blog-post/mobile/featured/nikola-tre-begins-production-624d67dec9362.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    z-index: +1;
+    color: white;
+    overflow: hidden;
+    padding: 5px;
+}
+.types .btruks h4{
+    font-size: 1.4em;
+    font-family: 'Paytone One', sans-serif;
+}
+.types .btruks h2{
+    font-size: 2.4em;
+    font-family: 'Paytone One', sans-serif;
+}
+.types .btruks p{
+    padding-top: 10px;
+}
+.btruks::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+.btruks::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+.btruks:hover::after{
+    display: block;
+    animation: btruks 2s forwards;
+}
+@keyframes btruks {
+    from{
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.591);
+    }
+    to{
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.335);
+    }
+}
+.news{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    background-image: url(https://i.pinimg.com/736x/c9/2b/5d/c92b5d89eb53814b63a889b8dac77ee2.jpg);
+
+    background-position: center;
+    position: relative;
+    
+}
+.news::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    position: absolute;
+    top: 0;
+}
+.news .n-1{
+    width: 300px;
+    height: 360px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.news .n-1 img{
+   
+}
+.news .n-1 img:hover{
+   
+    transform: scale(1.1);
+}
+.news .n-1 h5{
+    position: absolute;
+    top: 168px;
+    background-color: red;
+    font-size: 1.2em;
+    padding: 5px;
+}
+.news .n-1 h4{
+    padding-top: 10px;
+   
+    padding-left:3%;
+}
+.news .n-1 p{
+    padding-top: 25px;
+    padding-left:3%;
+    color: gray;
+}
+.sign{
+    width: 100%;
+    height: 240px;
+   /* background-image: url(./istockphoto-518304846-2048x2048-transformed\ 1.png);
+   background-position: center;
+   background-size:cover;
+   background-repeat: no-repeat;
+   position: relative; */
+   background-color: rgb(0, 0, 0);
+   margin-top: 30px;
+   position: relative;
+   overflow: hidden;
+   font-family: 'Paytone One', sans-serif;
+    
+}
+.sign img{
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+right: 0;
+}
+.sign #sign-img{
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+left: 0;
+}
+.sign::before{
+    content: " ";
+    width: 0%;
+    height: 10%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewX(-300deg);
+   
+}
+.sign p{
+    color: white;
+    font-size: 1.7em;
+    text-align: center;
+    padding-top: 40px;
+    margin-left: -80PX;
+}
+.sign input{
+    width: 30%;
+    height: 40px;
+    border: none;
+    margin-left: 24%;
+    margin-top: 20px;
+    padding-left: 20px;
+    
+}
+.sign button{
+    width: 12%;
+    height: 40px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 01em;
+    margin-top: 50px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+.sign button::before{
+    content: " ";
+    width: 124%;
+    height: 100%;
+    background-color: black;
+    position:absolute;
+    top: 0;
+    left: -30px;
+   display: none;
+    transform: skew(-20deg);
+}
+.sign button:hover::before{
+    display: block;
+    animation: sign 2s  forwards;
+}
+@keyframes sign {
+    from{
+       width: 0px;
+       background-color: black;
+    }
+    to{
+        width: 124%;
+        background-color: rgba(255, 255, 255, 0.605);
+    }
+}
+.brands{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    color: white;
+    
+}
+.ftr{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+}
+.ftr .f-logo img{
+    padding-left: 80px;
+    
+  margin-top: 20px;
+}
+.q-links{
+    display: flex;
+    margin-left: 10%;
+    gap: 40px;
+}
+.ftr .acc h4{
+    font-size: 1.2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.ftr .acc h4::before{
+    content: " ";
+    width: 80px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+   bottom: 7px;
+}
+.ftr .acc{
+    margin-left: 50px;
+}
+.ftr .acc li{
+    list-style-type: none;
+    margin-top: 20px;
+    color: gray;
+}
+.ftr .acc li:hover{
+    color: red;
+}
+.s-logo{
+    margin-left: 8%;
+}
+.f-cat{
+    display: flex;
+    align-items: center;
+}
+.shop-cat{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 3%;
+    line-height: 0.2;
+}
+.shop-cat p{
+    color: white;
+    font-size: 0.8em;
+}
+.shop-cat li{
+    list-style-type: none;
+    color: gray;
+    position: relative;
+    
+}
+.shop-cat li::before{
+    content: " ";
+    width: 2px;
+    height: 17px;
+    background-color: rgba(128, 128, 128, 0.543);
+    position: absolute;
+    top: -6px;
+    left: -10px;
+}
+.copy{
+    margin-top: 50px;
+    
+    color: gray;
+}
+.copy img{
+    float: right;
+    margin-right: 5%;
+    margin-top: -110px;
+}
+.copy p{
+  /*   margin-left: 30%; */
+    padding-top: 20px;
+    text-align: center;
+    
+}
+.ftr::before{
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.662);
+    position: absolute;
+    bottom: -160px;
+}
+.bag1div,.bag2div,.bag3div,.bag4div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 0px;
+    flex-direction: row;
+
+}
+@media screen and (max-width:600px) {
+    header{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        position:sticky;
+        top: 0px;
+        z-index: 2;
+        padding: 2px;
+    }
+    header .logo img{
+        margin-left:5%;
+
+    }
+    header .fa-bars{
+        display: block;
+        float: right ;
+       margin-right: 10px;
+        font-size: 2em;
+        position: relative;
+    }
+   #bag{
+    position: absolute;
+    left: 30%;
+   }
+    #cart-value{
+        
+            background-color: red;
+            color: white;
+            padding:1PX;
+            width: 20px;
+            height: 20px;
+            border-radius: 100px;
+            text-align: center;
+            line-height: 20px;
+          position: absolute;
+         top: 0;
+         right:  120px;
+          z-index: +2;
+        }
+
+    header .fa-bars:hover ~ .nav{
+        display: block;
+        background-color: black;
+        position: absolute;
+        right: 0;
+        height: fit-content;
+        animation: nav 2s  forwards;
+        top: 0;
+        z-index: 3;
+     
+    }
+    @keyframes nav {
+        from{
+            transform: translateX(300px);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    header .nav ol li{
+        margin-top: 15px;
+        
+    }
+    header .nav {
+        display: none;
+    }
+    header .nav ol{
+        display: block;
+    }
+    .timing{
+        display: none;
+    }
+   #bag{
+    display: block;
+    margin-left: 140px;
+   }
+   #cart-value{
+ right: 25%;
+    position: absolute;
+    padding: 0px;
+    top: 10px;
+   }
+    .banner{
+        width: 100%;
+        height: 200px;
+    }
+    .banner h4{
+        font-size: 0.7em;
+        color: black;
+        padding-top: 0%;
+        margin-left: 10px;
+    }
+    .banner h2{
+        color: black;
+        font-size: 1.4em;
+        margin-left: 10px;
+        padding-top: 0px;
+        line-height: 1;
+    
+    }
+    .banner button{
+        width: 30%;
+        height: 30px;
+        background-color: red;
+        border: none;
+        color: white;
+        font-size: 0.8em;
+        border-radius: 5px;
+        margin-top:90px;
+        margin-left: 10px;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+    }
+    .category{
+        display:block;
+        justify-content: ;
+        background-color:white;
+    }
+    .category .sec-1-category h4{
+        font-size: 1em;
+        margin-left: 14%;
+        padding-top: 5%
+        
+    }
+    .category .sec-1-category p{
+        width: 80%;
+        margin-left: 14%;
+        margin-top: 10px;
+    }
+    .sec-1-category .cate-card{
+        display: flex;
+        gap: 10px;
+        margin-top: 10%;
+        margin-left: 15%;
+    
+        
+    }
+    .sec-1-category .cate-card img{
+        margin-left: 12%;
+        width: 50px;
+        
+    }
+    .sec-1-category .cate-card h4{
+        margin-left: 27%;
+           margin-top: -15%;
+       }
+       .sec-1-category .cate-card .c-1{
+        width: 25%;
+        height: fit-content;
+       
+        background-color: rgba(255, 0, 0, 0.689);
+    }
+    .sec-1-category .cate-card .c-2{
+        width: 25%;
+        height: fit-content;
+        background-color: rgba(128, 128, 128, 0.277);
+    }
+    .sec-1-category .cate-card .c-3{
+        width:25%;
+        height:fit-content;
+        background-color: rgba(128, 128, 128, 0.277);
+    }
+    .sec-1-category .cate-card .c-4{
+        width: 25%;
+        height: fit-content;
+        background-color: rgba(128, 128, 128, 0.277);
+    }
+    .sec-1-category .cate-card .c-5{
+        width: 25%;
+        height: fit-content;
+        background-color: rgba(128, 128, 128, 0.277);
+    }
+    .sec-1-category .cate-card .c-6{
+        width:25%;
+        height: fit-content;
+        background-color: rgba(128, 128, 128, 0.277);
+    }
+    .cate-img{
+        display: none;
+    }
+    .deals button{
+        width: 25% !important;
+        height: 40px !important;
+    background-color: black;
+    color: WHITE !important;
+        
+       font-size: 0.7em !important;
+        text-align: center;
+    }
+   .deals-card{
+ display: block;
+        width: 100%;
+        height: fit-content;
+       margin: auto;
+        margin-top: 50px;
+        overflow: scroll;
+      
+    }
+    .d-card-1{
+        width: 240PX;
+        height: fit-content;
+        padding: 8px;
+        margin-left: 0px;
+        margin: auto;
+        margin-top: 10px;
+        box-shadow: 2px 2px 10px gray;
+    }
+      /*.d-parent{
+
+    
+        display: flex;
+        width:960px;
+        height: fit-content;
+      
+
+       
+        gap: 20px;
+    }
+    .d-card-1{
+        width: fit-content;
+        height: fit-content;
+        padding: 8px;
+        margin-left: 0px;
+        box-shadow: 2px 2px 10px gray;
+    }
+     */
+    .lead{
+        width: 100%;
+        height: 180px;
+        display: flex;
+        align-items: center;
+      background-image: url(./Group\ 1.png);
+      background-size: cover;
+      background-position: center;
+        overflow: hidden;
+        justify-content: space-around;
+        margin-top: 30px;
+        text-align: center;
+        font-family: 'Paytone One', sans-serif;
+    }
+    .lead img{
+        width: 160px;
+        height: 100px;
+        margin-left: -40px;
+    }
+    .lead .l-tyre{
+        margin-right: -30px;
+        padding-right: -50px;
+        text-align: center;
+      
+    }
+    .lead .l-tyre h4{
+        font-size: 0.4em;
+        color: white;
+       ;
+      margin-left: -60px;
+      margin-top: 30px;
+    }
+    .lead .l-tyre h2{
+        font-size: 1em;
+        padding-top: 10px;
+        color: white;
+        margin-left: -60px;
+    }
+    .lead .l-tyre button{
+        width: 30% !important;
+        height: 60px;
+        background-color: rgba(255, 0, 0, 0.91);
+        color: white;
+        font-size: 0.6em;
+        border:none;
+        cursor: pointer;
+       
+    }
+    .b-call{
+        display: flex;
+     align-items: center;
+     background-color: rgba(255, 0, 0, 0.91);
+     height: 30px;
+     width: 100%;
+     justify-content: center;
+     gap:20px;
+     color: white;
+     margin: auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+   padding: 5px;
+   margin-left: -40px;
+    
+    }
+    .fa-phone-volume{
+        font-size: 1em;
+        margin-left: 10px;
+        color: white;
+    
+    }
+    .types .bikes{
+        width: 100%;
+    }
+    .types .cars{
+        display: none;
+    }
+    .types .trucks{
+        display: none;
+    }
+    .types .btruks{
+        display: none;
+    }
+    #n1,#n2{
+        display: none;
+    }
+    .news .n-1, .news .n-1 img{
+        width: 100%;
+    }
+    .news .n-1 img{
+        height: 200px;
+        object-fit: cover;
+    }
+    .sign img{
+        display: none;
+    }
+    .sign p{
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        padding-top: 40px;
+        margin-left: 10%;
+        width: 300px;
+    }
+    .sign input{
+        width: 30%;
+        height: 30px;
+        border: none;
+        margin-left: 24%;
+        margin-top: -40px;
+        padding-left: 20px;
+        
+    }
+    .sign button{
+        width: 25%;
+        height: 30px;
+        border: none;
+        background-color: red;
+        color: white;
+        font-size: 0.5em;
+        margin-top: 30px;
+        padding-bottom: 3px;
+        font-weight: bold;
+        position: relative;
+        overflow: hidden;
+    }
+    .brands{
+        display: none;
+    }
+    footer{
+        margin-top: 50px;
+        width: 100%;
+        height: fit-content;
+        background-color: black;
+        color: white;
+        
+    }
+    .ftr .f-logo img{
+        width: 100px;
+        padding-left: 0;
+        margin-left:35%;
+    }
+    .ftr{
+        display: block;
+    }
+    .q-links{
+        display: block;
+        text-align: center;
+        margin-left: -15%;
+    }
+    .s-logo{
+        margin-left:32%;
+        margin-top: 20px;
+       
+    }
+    .ftr .acc h4::before{
+        content: " ";
+        width: 80px;
+        height: 3px;
+        background-color: red;
+        position: absolute;
+       bottom: 7px;
+       left: 40%;
+    }
+    .f-cat{
+        display: none;
+    }
+    .copy img{
+        width: 200px;
+       float: none;
+       margin-left: 25%;
+         margin-top: -30px;
+    }
+    .copy p{
+        width: 290px;
+        text-align: center;
+        margin-left: 12%;
+        line-height: 1.4;
+        margin-top: 10px;
+    }
+    .shop-cat li::before{
+        content: " ";
+        width: 2px;
+        height: 17px;
+        background-color: rgba(128, 128, 128, 0.543);
+        position: absolute;
+        top: -20px;
+        left: -10px;
+    }
+    .cart-page{
+        width: fit-content;
+        height: fit-content;
+       background-color: white;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 3;
+        display: block;
+        animation: cart 2s forwards;
+       overflow: hidden;
+        transition: all;
+        transition-duration: 3s;
+        transform: translateX(600px);
+    
+    }
+    .bag1div{
+        display:block;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+        margin-top: 40px;
+       
+    }
+    .bag2div,.bag2div,.bag3div,.bag4div{
+        display: block;
+    }
+    
+}
